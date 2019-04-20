@@ -50,3 +50,7 @@ target
 .classpath
 .project
 .prefs
+
+.idea
+*.iml
+*.log

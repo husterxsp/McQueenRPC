@@ -15,6 +15,7 @@ import com.caucho.hessian.io.Hessian2Output;
  */
 public class HessianEncoder implements Encoder {
 
+	@Override
 	public byte[] encode(Object object) throws Exception {
 		ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
 		Hessian2Output output = new Hessian2Output(byteArray);

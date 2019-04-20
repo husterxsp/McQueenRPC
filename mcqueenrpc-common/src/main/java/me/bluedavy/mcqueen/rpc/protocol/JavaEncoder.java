@@ -14,6 +14,7 @@ import java.io.ObjectOutputStream;
  */
 public class JavaEncoder implements Encoder {
 
+	@Override
 	public byte[] encode(Object object) throws Exception {
 		ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
 		ObjectOutputStream output = new ObjectOutputStream(byteArray);

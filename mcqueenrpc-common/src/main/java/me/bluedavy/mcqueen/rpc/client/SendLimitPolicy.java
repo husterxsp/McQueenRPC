@@ -1,8 +1,8 @@
 /**
  * nfs-rpc
- *   Apache License
- *   
- *   http://code.google.com/p/nfs-rpc (c) 2011
+ * Apache License
+ * <p>
+ * http://code.google.com/p/nfs-rpc (c) 2011
  */
 package me.bluedavy.mcqueen.rpc.client;
 
@@ -13,7 +13,7 @@ package me.bluedavy.mcqueen.rpc.client;
  */
 public enum SendLimitPolicy {
 
-	REJECT, // Reject send request and throw exception
-	WAIT1SECOND // Wait 1 second then retry,if failed again,then throw exception
-	
+    REJECT, // Reject send request and throw exception
+    WAIT1SECOND // Wait 1 second then retry,if failed again,then throw exception
+
 }

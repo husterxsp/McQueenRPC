@@ -202,7 +202,8 @@ public class RPCBenchmarkClientRunnable implements ClientRunnable {
 		}
 	}
 	
-	public List<long[]> getResults() {
+	@Override
+    public List<long[]> getResults() {
 		List<long[]> results = new ArrayList<long[]>();
 		results.add(responseSpreads);
 		results.add(tps);
