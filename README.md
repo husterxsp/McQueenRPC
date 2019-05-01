@@ -6,3 +6,7 @@
 ### 运行
 
 参考 clientcommon.sh、servercommon.sh设置运行参数即可
+
+![./img/1.png](./img/1.png)
+
+![./img/2.png](./img/2.png)
