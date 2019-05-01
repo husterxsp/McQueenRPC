@@ -70,8 +70,10 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
             threadpool.execute(new HandlerRunnable(ctx, message, threadpool));
         } catch (RejectedExecutionException exception) {
+            // 线程池满，默认AbortPolicy抛出异常。
             LOGGER.error("server threadpool full,threadpool maxsize is:"
                     + ((ThreadPoolExecutor) threadpool).getMaximumPoolSize());
+
             if (message instanceof List) {
                 List<RequestWrapper> requests = (List<RequestWrapper>) message;
                 for (final RequestWrapper request : requests) {

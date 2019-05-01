@@ -54,3 +54,4 @@ target
 .idea
 *.iml
 *.log
+*.svn

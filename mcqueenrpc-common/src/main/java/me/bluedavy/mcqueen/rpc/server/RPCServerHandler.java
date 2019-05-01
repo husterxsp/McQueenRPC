@@ -31,6 +31,7 @@ public class RPCServerHandler implements ServerHandler {
     // Cached Server Methods  key: instanceName#methodname$argtype_argtype
     private static Map<String, Method> cacheMethods = new HashMap<String, Method>();
 
+    @Override
     public void registerProcessor(String instanceName, Object instance) {
         processors.put(instanceName, instance);
         Class<?> instanceClass = instance.getClass();
@@ -47,6 +48,7 @@ public class RPCServerHandler implements ServerHandler {
         }
     }
 
+    @Override
     public ResponseWrapper handleRequest(final RequestWrapper request) {
         ResponseWrapper responseWrapper = new ResponseWrapper(request.getId(), request.getCodecType(), request.getProtocolType());
         String targetInstanceName = new String(request.getTargetInstanceName());
