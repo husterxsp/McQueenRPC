@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>mcqueenrpc-common</module>
-	<module>mcqueenrpc-netty</module>
+	<module>mcqueenrpc-netty4</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
